@@ -4,10 +4,12 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 import com.authon.oauth.client.Client;
 import com.authon.oauth.client.OAuthTokenRequest;
 
+@Configuration
 public class PolicyOAuthServer {
 	
 	private static Set<Client> authorizedClients = new HashSet<Client>();

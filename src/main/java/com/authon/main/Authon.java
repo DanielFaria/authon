@@ -11,7 +11,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
-@SpringBootApplication(scanBasePackages = { "com.authon.controller", "com.authon.oauth.server","com.authon.oauth.server.token"})
+@SpringBootApplication(scanBasePackages = { "com.authon.controller", "com.authon.oauth.server","com.authon.oauth.server.token", "com.authon.oauth.server.policy"})
 @EnableSAMLSSO
 public class Authon {
 
