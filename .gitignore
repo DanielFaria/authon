@@ -3,3 +3,8 @@
 .settings/
 .classpath
 .mvn/
+.gradle/
+build/
+gradle/
+gradlew.bat
+settings.gradle
