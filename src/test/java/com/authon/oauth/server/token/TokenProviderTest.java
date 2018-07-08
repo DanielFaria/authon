@@ -25,7 +25,7 @@ public class TokenProviderTest {
 	
 	private TokenProvider tokenProvider;
 	private SamlUserInfo samlUser;
-	private SecretKey secretKey = new SecretKey("OnUddiMyGGxHT7O7B90W_KG0INPTc5xIvR8nFKg4");
+	private SecretKey secretKey = new SecretKey("Yn2kjibddFAWtnPJ2AFlL8WXmohJMCvigQggaEypa5E=");
 	private OAuthTokenRequest oauthTokenRequest;
 	private HttpServletRequest request;
 	private ValidityTokenPolicy validityToken;
@@ -59,7 +59,7 @@ public class TokenProviderTest {
 	public void testTokenMustInvalidValidWhenParsingWithRightSigningKey() {
 		String token = tokenProvider.createToken(oauthTokenRequest, samlUser);
 		boolean validToken = true;
-		SecretKey otherSecretKey = new SecretKey("Yn2kjibddFAWtnPJ2AFlL8WXmohJMCvigQggaEypa5E");
+		SecretKey otherSecretKey = new SecretKey("Yn2kjibddFAWtnPJ2AFlL8WXmohJMCvigQggaEypa");
 		try {
 			Jwts.parser().setSigningKey(otherSecretKey.getKeyInBase64()).parseClaimsJws(token)
 					.getBody();

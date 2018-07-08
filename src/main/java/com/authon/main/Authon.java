@@ -1,17 +1,24 @@
 package com.authon.main;
 
-import com.github.ulisesbocchio.spring.boot.security.saml.annotation.EnableSAMLSSO;
-import com.github.ulisesbocchio.spring.boot.security.saml.configurer.ServiceProviderConfigurerAdapter;
-import com.github.ulisesbocchio.spring.boot.security.saml.configurer.ServiceProviderBuilder;
-
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
-@SpringBootApplication(scanBasePackages = { "com.authon.controller", "com.authon.oauth.server","com.authon.oauth.server.token", "com.authon.oauth.server.policy"})
+import com.github.ulisesbocchio.spring.boot.security.saml.annotation.EnableSAMLSSO;
+import com.github.ulisesbocchio.spring.boot.security.saml.configurer.ServiceProviderBuilder;
+import com.github.ulisesbocchio.spring.boot.security.saml.configurer.ServiceProviderConfigurerAdapter;
+
+@SpringBootApplication
+@RestController
+@ComponentScan
+@Configuration
+@EnableAutoConfiguration
 @EnableSAMLSSO
 public class Authon {
 
