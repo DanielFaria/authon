@@ -32,6 +32,9 @@ jobs:
           - v1-dependencies-
 
       - run: gradle dependencies
+      - run:
+          name: Hawkeye
+          command: bash hawkeye/security-checks.sh
       - run: gradle clean build
 
       - save_cache:
