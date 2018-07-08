@@ -19,7 +19,7 @@ is succeed a JWT will be generate.
 
 ## The Flux  ##
 
-![Diagram](http://jgraph.github.io/drawio-github/diagram.png)
+![Diagram](https://github.com/DanielFaria/authon/blob/master/docs/Authon.png)
 
 
 
