@@ -11,9 +11,9 @@ is succeed a JWT will be generate.
 
 ## Some Stuffs are using here ##
 
-* ![CircleCI](https://circleci.com/gh/DanielFaria/authon) Circle CI as continous integration tool 
-* ![CircleCI](https://github.com/Stono/hawkeye) "Check security, vulnerability and general risk highlighting tool"
-* ![Gradle](https://gradle.org/) Build Tool
+* [CircleCI](https://circleci.com/gh/DanielFaria/authon) Circle CI as continous integration tool 
+* [Hawkeye](https://github.com/Stono/hawkeye) "Check security, vulnerability and general risk highlighting tool"
+* [Gradle](https://gradle.org/) Build Tool
 
 
 ## The Flux  ##
