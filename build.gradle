@@ -12,6 +12,7 @@ buildscript {
 
 apply plugin: 'java'
 apply plugin: 'maven'
+apply plugin: 'org.springframework.boot'
 
 group = 'com.authon'
 version = '0.0.1'
@@ -24,7 +25,10 @@ tasks.withType(JavaCompile) {
 	options.encoding = 'UTF-8'
 }
 
-
+jar {
+    baseName = 'authon'
+    version =  '1.0'
+}
 
 repositories {
         
