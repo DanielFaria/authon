@@ -4,14 +4,13 @@
 
 ## Convert SAML to JWT to React Okta's Libraries ##
 
-The main goal is convert SAML to JWT Token. To achieve this there's 
-a endpoint that when acessing SAML authentication is required, if this
-is succeed a JWT will be generate.
+The main goal is to convert SAML to JWT Token. In order to achieve this there's 
+an endpoint that when acessing SAML authentication is required, if this succeeds a JWT will be generated.
 
 
-## Some Stuffs are using here ##
+## Some stuff being using here ##
 
-* [CircleCI](https://circleci.com/gh/DanielFaria/authon) Circle CI as continous integration tool 
+* [CircleCI](https://circleci.com/gh/DanielFaria/authon) Circle CI as the continous integration tool 
 * [Hawkeye](https://github.com/Stono/hawkeye) "Check security, vulnerability and general risk highlighting tool"
 * [Gradle](https://gradle.org/) Build Tool
 
